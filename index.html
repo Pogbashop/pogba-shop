@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pogba@shop – Cheap Gaming Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --main-bg: #1a1b2f;
+      --card-bg: #292c4d;
+      --highlight: #00bcd4;
+      --accent: #ffeb3b;
+      --text-light: #f1f1f1;
+    }
+
+    body {
+      background-color: var(--main-bg);
+      color: var(--text-light);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #2b2d50, #3a3c65);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--highlight);
+      animation: pulse 2s infinite;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .product-card {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h2 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .product-card p {
+      font-weight: bold;
+      color: #8cffc1;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--highlight);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #0097a7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #bbb;
+      background-color: #12132c;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Floating GIF styles */
+    .bg-gifs img {
+      position: fixed;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.6;
+      width: 80px;
+      animation: drift 6s infinite ease-in-out;
+    }
+
+    .gif-top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .gif-top-right {
+      top: 10px;
+      right: 10px;
+    }
+
+    .gif-bottom-left {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .gif-bottom-right {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    @keyframes drift {
+      0% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-8px) scale(1.05); }
+      100% { transform: translateY(0px) scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔥 Pogba@shop</h1>
+    <p>Buy Valorant Accounts & Steam Games at Best Prices</p>
+  </header>
+
+  <section class="products">
+    <!-- Valorant Product Example -->
+    <div class="product-card">
+      <img src="assets/valorant-account1.png" alt="Valorant Account" />
+      <h2>Iron to Silver Valorant Account</h2>
+      <p>₹299</p>
+      <a href="valorant-iron.html" class="buy-btn">View Details</a>
+    </div>
+
+    <!-- Valorant Gold Account -->
+    <div class="product-card">
+      <img src="assets/valorant-gold-account.png" alt="Valorant Gold Account" />
+      <h2>Gold to Platinum Valorant Account</h2>
+      <p>₹449</p>
+      <a href="valorant-gold.html" class="buy-btn">View Details</a>
+    </div>
+
+    <!-- Steam Game: GTA V -->
+    <div class="product-card">
+      <img src="assets/gta-v.png" alt="GTA V Steam" />
+      <h2>GTA V (Steam Key)</h2>
+      <p>₹349</p>
+      <a href="steam-gta-v.html" class="buy-btn">View Details</a>
+    </div>
+  </section>
+
+  <!-- Floating Background GIFs -->
+  <div class="bg-gifs">
+    <img src="assets/valorant-glow.gif" class="gif-top-left" alt="VFX" />
+    <img src="assets/steam-spark.gif" class="gif-top-right" alt="Steam Spark" />
+    <img src="assets/orb.gif" class="gif-bottom-left" alt="Glow Orb" />
+    <img src="assets/crosshair.gif" class="gif-bottom-right" alt="Crosshair Effect" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pogba@shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
